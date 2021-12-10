@@ -1,0 +1,27 @@
+{
+  "name": "hm12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "hosein jalili",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hosein-JL/hosein_jalili_hw12_maktab62.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hosein-JL/hosein_jalili_hw12_maktab62/issues"
+  },
+  "homepage": "https://github.com/Hosein-JL/hosein_jalili_hw12_maktab62#readme",
+  "description": ""
+}
