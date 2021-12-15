@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "title": "کفش آدیداس مدل am 123",
+        "color": "مشکی",
+        "size": "۴۱",
+        "material": "چرم مصنوعی",
+        "price": "۳۵۶,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img1.jpg"
+    },
+    {
+        "id": "2",
+        "title": "کفش نایک مدل bm 321",
+        "color": "خاکستری",
+        "size": "۴۲",
+        "material": "چرم مصنوعی",
+        "price": "۱۳۶,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img2.jpg"
+    },
+    {
+        "id": "3",
+        "title": "کفش آدیداس مدل cm 124",
+        "color": "قرمز",
+        "size": "۴۰",
+        "material": "پارچه",
+        "price": "۴۹۹,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img3.jpg"
+    },
+    {
+        "id": "4",
+        "title": "کفش آلفازتا مدل dm 432",
+        "color": "آبی",
+        "size": "۳۹",
+        "material": "چرم",
+        "price": "۳۱۹,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img2.jpg"
+    },
+    {
+        "id": "5",
+        "title": "کفش آلفازتا مدل em 234",
+        "color": "سفید",
+        "size": "۳۹",
+        "material": "چرم",
+        "price": "۲۹۶,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img1.jpg"
+    },
+    {
+        "id": "6",
+        "title": "کفش نایک مدل 453",
+        "color": "زرد",
+        "size": "۴۱",
+        "material": "چرم مصنوعی",
+        "price": "۴۹۰,۰۰۰",
+        "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
+        "image": "../public/img/img3.jpg"
+    }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../common/header.ejs', title) %>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <%- include('../common/navbar.ejs', active) %>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-12 col-md-6 col-lg-4 pad-30">
+                    <div class="card width-100 pad-10 my-card-style">
+                        <img src="<%= shoe.image %>" class="card-img-top" alt="...">
+                        <div class="card-body rtl text-center">
+                            <h5 class="card-title">
+                                <%= shoe.title %>
+                            </h5>
+                            <p><span>رنگ: </span><span>
+                                    <%= shoe.color %>
+                                </span></p>
+                            <p><span>سایز: </span><span>
+                                    <%= shoe.size %>
+                                </span></p>
+                            <p><span>جنس: </span><span>
+                                    <%= shoe.material %>
+                                </span></p>
+                            <p><span>قیمت: </span><span>
+                                    <%= shoe.price %> تومان
+                                </span></p>
+                            <p><span>توضیحات: </span><span>
+                                    <%= shoe.description %>
+                                </span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+
+
+            </div>
+    </div>
+    <%- include('../common/scripts.ejs') %>
+</body>
+
+</html>

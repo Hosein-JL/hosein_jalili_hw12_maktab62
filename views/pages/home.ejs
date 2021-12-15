@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../common/header.ejs', title) %>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <%- include('../common/navbar.ejs', active, title) %>
+      <div class="row">
+        <% shoes.forEach(shoe=> { %>
+          <div class="col-sm-12 col-md-6 col-lg-4 pad-30">
+            <div class="card width-100 pad-10 my-card-style">
+              <img src="<%= shoe.image %>" class="card-img-top" alt="...">
+              <div class="card-body rtl text-center">
+                <h5 class="card-title">
+                  <%= shoe.title %>
+                </h5>
+                <p><span>رنگ: </span><span>
+                    <%= shoe.color %>
+                  </span></p>
+                <p><span>سایز: </span><span>
+                    <%= shoe.size %>
+                  </span></p>
+                <p><span>جنس: </span><span>
+                    <%= shoe.material %>
+                  </span></p>
+                <p><span>قیمت: </span><span>
+                    <%= shoe.price %> تومان
+                  </span></p>
+                <p><span>ویژگی‌های تخصصی کفش: </span><span>
+                    <%= shoe.description %>
+                  </span></p>
+                <a id="buy-btn" href="/product/<%= shoe.id %> " class="btn btn-primary buy-btn">افزودن به سبد خرید</a>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+
+      </div>
+      <div>
+        <%- include('../common/pagination.ejs') %>
+      </div>
+  </div>
+  <footer>
+    <%- include('../common/footer.ejs') %>
+  </footer>
+  <%- include('../common/scripts.ejs') %>
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>
