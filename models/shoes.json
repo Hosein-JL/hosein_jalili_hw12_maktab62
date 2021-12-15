@@ -31,32 +31,32 @@
     },
     {
         "id": "4",
-        "title": "کفش آلفازتا مدل dm 432",
+        "title": "کفش جردن مدل dm 432",
         "color": "آبی",
         "size": "۳۹",
         "material": "چرم",
         "price": "۳۱۹,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img2.jpg"
+        "image": "../public/img/img4.jpg"
     },
     {
         "id": "5",
-        "title": "کفش آلفازتا مدل em 234",
+        "title": "کفش جردن مدل em 234",
         "color": "سفید",
         "size": "۳۹",
         "material": "چرم",
         "price": "۲۹۶,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img1.jpg"
+        "image": "../public/img/img5.jpg"
     },
     {
         "id": "6",
         "title": "کفش نایک مدل 453",
-        "color": "زرد",
+        "color": "آبی",
         "size": "۴۱",
         "material": "چرم مصنوعی",
         "price": "۴۹۰,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img3.jpg"
+        "image": "../public/img/img6.jpg"
     }
 ]

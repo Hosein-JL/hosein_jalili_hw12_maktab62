@@ -24,7 +24,7 @@ app.use(function (req, res) {
   res.status(404);
   // respond with html page
   if (req.accepts("html")) {
-    res.send(`${errPage} (error 404)`);
+    res.sendfile('./public/img/404.jpg');
     return;
   }
   // respond with json
