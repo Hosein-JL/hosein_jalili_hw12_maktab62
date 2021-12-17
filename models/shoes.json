@@ -7,7 +7,7 @@
         "material": "چرم مصنوعی",
         "price": "۳۵۶,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img1.jpg"
+        "image": "https://wallpaperaccess.com/download/adidas-superstar-1252356"
     },
     {
         "id": "2",
@@ -17,7 +17,7 @@
         "material": "چرم مصنوعی",
         "price": "۱۳۶,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img2.jpg"
+        "image": "https://wallpaperaccess.com/download/nike-shoes-1597758"
     },
     {
         "id": "3",
@@ -27,7 +27,7 @@
         "material": "پارچه",
         "price": "۴۹۹,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img3.jpg"
+        "image": "https://wallpaperaccess.com/download/adidas-shoes-1252228"
     },
     {
         "id": "4",
@@ -37,7 +37,7 @@
         "material": "چرم",
         "price": "۳۱۹,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img4.jpg"
+        "image": "https://wallpaperaccess.com/download/michael-jordan-shoes-851655"
     },
     {
         "id": "5",
@@ -47,7 +47,7 @@
         "material": "چرم",
         "price": "۲۹۶,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img5.jpg"
+        "image": "https://wallpaperaccess.com/download/shoe-680065"
     },
     {
         "id": "6",
@@ -57,6 +57,6 @@
         "material": "چرم مصنوعی",
         "price": "۴۹۰,۰۰۰",
         "description": "ضد آب، مقاوم در برابر سایش، کاهش فشارهای وارده",
-        "image": "../public/img/img6.jpg"
+        "image": "https://wallpaperaccess.com/download/shoe-680136"
     }
 ]

@@ -6,6 +6,7 @@ const shoesData = require(path.join(
 ));
 
 module.exports = (req, res, next) => {
+  console.log(req.query);
   let homeData = {
     active: "home",
     title: "Home",
