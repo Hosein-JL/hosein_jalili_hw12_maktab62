@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $(".update-btn").click(updateClick);
-  $(".logout-btn").click(logoutClick);
 });
 
 function updateClick() {
@@ -56,19 +55,5 @@ function updateClick() {
     } else {
       $("#updateNecessary").css("display", "block");
     }
-  });
-}
-
-function logoutClick() {
-  const username = this.id.split("???")[1];
-  $.ajax({
-    type: "POST",
-    url: `/user/${username}`,
-    success: function (response) {
-      location.replace("/");
-    },
-    error: function (err) {
-      location.replace("/");
-    },
   });
 }

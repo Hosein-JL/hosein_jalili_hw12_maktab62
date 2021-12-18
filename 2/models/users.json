@@ -1,11 +1,1 @@
-[
-    {
-        "username": "hw12",
-        "fName": "Hosein",
-        "lName": "Jalili",
-        "password": "12345",
-        "email": "admin@jl.com",
-        "gender": "male",
-        "isLoggedIn": "true"
-    }
-]
+[{"fName":"Hosein","lName":"Jalili","username":"JL","password":"12345","email":"hosein@JL","gender":"male","isLoggedIn":"true"}]
