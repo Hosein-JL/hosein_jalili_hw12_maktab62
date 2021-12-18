@@ -9,8 +9,7 @@ body {
 
 .sidenav {
   height: 100%;
-  background-image: url("../img/login.jpg");
-  background-size: 100% 100%;
+  background-image: url(https://wallpaperaccess.com/download/facebook-1493662);
   overflow-x: hidden;
   background-repeat: no-repeat, repeat;
   padding-top: 20px;
@@ -71,4 +70,35 @@ body {
 .btn-black {
   background-color: #000 !important;
   color: #fff;
+}
+
+#login-btn {
+  margin-top: 10px;
+}
+
+#register-btn {
+  margin-top: 10px;
+}
+
+#pass_margin {
+  margin-top: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.dangerText {
+  color: red;
+  font-size: 1.5rem;
+  display: none;
+}
+
+#loginNecessary {
+  margin-left: -40px;
 }

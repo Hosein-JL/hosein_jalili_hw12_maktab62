@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../common/commonHead.ejs', title) %>
+        <link rel="stylesheet" href="/public/css/edit.css">
+</head>
+
+<body class="">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+                        src="https://avatars.githubusercontent.com/u/90463583?v=4" width="90"><span
+                        class="font-weight-bold">Hosein_JL</span><span class="text-black-50"><a id="git"
+                            class="text-white"
+                            href="https://github.com/hosein-jl">github.com/hosein-jl</a></span><span>United
+                        States</span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="text-right">Edit your profile</h6>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fName" class="form-label">First Name:</label>
+                            <input type="text" class="form-control" id="fName" placeholder="Forename" name="fName"
+                                value="<%= user.fName %>">
+                        </div>
+                        <div class="col-md-6"><label for="lName" class="form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="lName" placeholder="Surname" name="lName"
+                                value="<%= user.lName %>">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"> <label for="email " class="form-label ">Email:</label>
+                            <input type="email " class="form-control " id="email" placeholder="Email " name="email"
+                                value="<%= user.email %>">
+                        </div>
+                        <div id="margin_pass" class="col-md-12"> <label for="password"
+                                class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password"
+                                name="password" value="<%= user.password %>">
+                        </div>
+                        <div id="margin_user" class="col-md-12"> <label for="username"
+                                class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username" name="username"
+                                value="<%= user.username %>">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-wrapper col-md-6"><label class="form-label">Gender:</label>
+                            <div id="radio-gender">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male"
+                                        <%=user.gender==='male' ? 'checked' : '' %> >
+                                    <label class="form-check-label" for="male">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female"
+                                        value="female" <%=user.gender==='female' ? 'checked' : '' %>>
+                                    <label class="form-check-label" for="female">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="updateNecessary" class="text-center dangerText">Incorrect username or password ‼</p>
+                    <p id="updateErrorText" class="text-center dangerText "></p>
+                    <div class="mt-5 text-center"> <button id="update-btn" data-user="<%= user.username %>"
+                            data-pass="<%= user.password %>" type="button "
+                            class="form-control btn btn-primary update-btn">Save Profile</button></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience"><span>Edit
+                            Experience</span><span class="border px-3 p-1 add-experience"><i
+                                class="fa fa-plus"></i>&nbsp;Experience</span></div>
+                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://i.imgur.com/azSfBM3.png"
+                            width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">Junior Web
+                                Developer</span><span class="d-block text-black-50 labels">Twitter Inc.</span><span
+                                class="d-block text-black-50 labels">March,2017 - May 2021</span></div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row mt-3 exp-container"><img
+                            src="https://img.icons8.com/color/100/000000/facebook.png" width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">Junior Web
+                                Developer</span><span class="d-block text-black-50 labels">Facebook Inc.</span><span
+                                class="d-block text-black-50 labels">March,2017 - May 2021</span></div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row mt-3 exp-container"><img
+                            src="https://img.icons8.com/color/50/000000/google-logo.png" width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">UI/UX
+                                Designer</span><span class="d-block text-black-50 labels">Google Inc.</span><span
+                                class="d-block text-black-50 labels">March,2017 - May 2021</span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('../common/commonScripts.ejs') %>
+        <script src="/public/js/user.js"></script>
+</body>
+
+</html>

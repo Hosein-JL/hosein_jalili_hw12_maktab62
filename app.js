@@ -4,7 +4,6 @@ const path = require("path");
 const PORT = 3000;
 const errPage = "Not found...!";
 
-
 const homeRouter = require(path.join(__dirname, "routes", "home.js"));
 const contactRouter = require(path.join(__dirname, "routes", "contact.js"));
 const aboutRouter = require(path.join(__dirname, "routes", "about.js"));
@@ -23,7 +22,7 @@ app.use(function (req, res) {
   res.status(404);
   // respond with html page
   if (req.accepts("html")) {
-    res.sendfile('./public/img/404.jpg');
+    res.sendFile(path.join(__dirname, "./public/img/404.jpg"));
     return;
   }
   // respond with json

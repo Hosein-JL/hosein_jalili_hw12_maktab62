@@ -1,13 +1,12 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
+
+const loginController = require(path.join(path.dirname(__dirname), 'controllers', 'login.js'))
+
 const router = express.Router();
 
-const loginController = require(path.join(
-  path.dirname(__dirname),
-  "controllers",
-  "login.js"
-));
+router.get('/', loginController.getLoginPage);
 
-router.get("/", loginController);
+router.post('/login', loginController.checkLogin)
 
 module.exports = router;
