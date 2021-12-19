@@ -2,6 +2,8 @@ $(document).ready(function () {
   $("#signup-btn").click(signupBtnClick);
 });
 
+// https://stackoverflow.com/questions/63494947/get-value-from-radio-button-inputname-genderchecked-returns-null
+
 function signupBtnClick() {
   if (
     $("#username").val() &&

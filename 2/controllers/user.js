@@ -14,10 +14,6 @@ const getUserPage = (req, res) => {
       title: "User",
       user,
     });
-  } else {
-    res.status(403).render(path.join("pages", "403.ejs"), {
-      title: 403,
-    });
   }
 };
 
