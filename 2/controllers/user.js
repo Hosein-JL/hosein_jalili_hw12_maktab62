@@ -17,34 +17,6 @@ const getUserPage = (req, res) => {
   }
 };
 
-const logoutUser = (req, res) => {
-  const userIndex = users.findIndex(
-    (user) => user.username === req.params.username
-  );
-  if (userIndex >= 0) {
-    users[userIndex].isLoggedIn = "false";
-    fs.writeFile(
-      path.join(path.dirname(__dirname), "models", "users.json"),
-      JSON.stringify(users),
-      "utf8",
-      (err) => {
-        if (err) {
-          return res.status(400).json({
-            message: "Bad request.",
-          });
-        }
-        return res.status(200).json({
-          message: "OK",
-        });
-      }
-    );
-  } else {
-    return res.status(404).json({
-      message: "not found!",
-    });
-  }
-};
-
 const updateUser = (req, res) => {
   const userIndex = users.findIndex(
     (user) => user.username === req.body.lasUsername
@@ -81,6 +53,5 @@ const updateUser = (req, res) => {
 
 module.exports = {
   getUserPage,
-  logoutUser,
   updateUser,
 };
