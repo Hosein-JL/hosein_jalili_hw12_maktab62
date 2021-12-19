@@ -14,7 +14,12 @@ const getSignupPage = (req, res) => {
 
 const checkSignup = (req, res) => {
   console.log(req.body);
-  if (users.find((user) => user.username === req.body.username)) {
+  if (
+    users.find(
+      (user) =>
+        user.username === req.body.username && user.gender === req.body.gender
+    )
+  ) {
     return res.status(409).json({
       message: "The username already exists.",
     });
